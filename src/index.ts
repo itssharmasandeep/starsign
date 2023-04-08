@@ -1,6 +1,6 @@
 /**
  * To get star sign using a date as epoch time
- * @param epoch time in epoch timestamp as number
+ * @param epoch time in epoch (in MS) timestamp as number
  * @param utc `true` when specified time is in UTC (default - `false`)
  * @returns star sign
  */
@@ -8,7 +8,7 @@ export const getStarSign = (epoch: number, utc: boolean = false): StarSign => {
   const dateObj = new Date(epoch);
 
   const date = utc ? dateObj.getUTCDate() : dateObj.getDate();
-  const month = utc ? dateObj.getUTCMonth() : dateObj.getMonth();
+  const month = (utc ? dateObj.getUTCMonth() : dateObj.getMonth()) + 1;
 
   if ((date >= 21 && month === 3) || (date <= 19 && month === 4)) {
     return StarSign.Aries;

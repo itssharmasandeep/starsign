@@ -1,0 +1,29 @@
+{
+  "name": "starsign",
+  "version": "1.0.0",
+  "description": "A library to get your star sign",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itssharmasandeep/starsign.git"
+  },
+  "keywords": [
+    "Star Sign",
+    "Zodiac Sign"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itssharmasandeep/starsign/issues"
+  },
+  "homepage": "https://github.com/itssharmasandeep/starsign#readme",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  },
+  "files": ["/lib/**/*"]
+}

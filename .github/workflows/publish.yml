@@ -20,7 +20,7 @@ jobs:
           registry-url: "https://registry.npmjs.com"
 
       - name: build
-        runs: npm run build
+        run: npm run build
 
       - name: publish
         run: npm publish --access public
